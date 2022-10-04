@@ -7,8 +7,8 @@ class State(Turtle):
     def __init__(self) -> None:
         super().__init__()
         self.found=0
-        self.locations=load(open("/home/anasmohammed361/vs/Python Course/india_map_game/json/states_with_coords.json"))
-        state=load(open("/home/anasmohammed361/vs/Python Course/india_map_game/json/states.json"))
+        self.locations=load(open("/home/anasmohammed361/vs/Python Course/Turtle/india_map_game/json/states_with_coords.json"))
+        state=load(open("/home/anasmohammed361/vs/Python Course/Turtle/india_map_game/json/states.json"))
         self.states=list(state.values())
         self.penup()
         self.hideturtle()
@@ -26,4 +26,4 @@ class State(Turtle):
     def complete(self):
         self.goto(0,0)
         self.write("Hurray you Found all the States!!!",align="Center",font=("Fira code",17,"italic"))
-        
+
